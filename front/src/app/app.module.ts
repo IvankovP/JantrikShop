@@ -7,9 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ErrorComponent } from './error/error.component';
-import { BlogListComponent } from './blog-list/blog-list.component';
 import { BlogComponent } from './blog/blog.component';
-import { BlogEditComponent } from './blog-edit/blog-edit.component';
+import { BlogDetailsComponent } from './blog-details/blog-details.component';
 import { ShopComponent } from './shop/shop.component';
 import { ProductComponent } from './product/product.component';
 import { CompareComponent } from './compare/compare.component';
@@ -24,9 +23,8 @@ import { WishlistComponent } from './wishlist/wishlist.component';
     AboutComponent,
     ContactsComponent,
     ErrorComponent,
-    BlogListComponent,
     BlogComponent,
-    BlogEditComponent,
+    BlogDetailsComponent,
     ShopComponent,
     ProductComponent,
     CompareComponent,
