@@ -1,0 +1,6 @@
+CREATE TABLE user_authentication
+(
+    id SERIAL PRIMARY KEY NOT NULL,
+    login CHARACTER VARYING (100) NOT NULL UNIQUE,
+    password CHARACTER VARYING (250) NOT NULL
+);

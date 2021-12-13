@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  jpa:
+    show-sql: true
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jantrikShop
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  mvc:
+    converters:
+      preferred-json-mapper: gson
+
+  gson:
+    date-format: dd-MM-yyyy

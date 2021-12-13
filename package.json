@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "ngx-slick-carousel": "^0.5.1",
+    "slick-carousel": "^1.8.1"
+  }
+}
