@@ -15,6 +15,10 @@ import { CompareComponent } from './compare/compare.component';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
+import { AccountComponent } from './account/account.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { WishlistComponent } from './wishlist/wishlist.component';
     CompareComponent,
     CartComponent,
     CheckoutComponent,
-    WishlistComponent
+    WishlistComponent,
+    AccountComponent,
+    ForgotPasswordComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

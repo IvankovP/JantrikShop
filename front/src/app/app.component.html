@@ -110,9 +110,9 @@
               <ul>
                 <li><a routerLink="compare"><i class="fa fa-cog"></i></a>
                   <ul class="ht-dropdown">
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="register.html">Register</a></li>
-                    <li><a href="account.html">Account</a></li>
+                    <li><a routerLink="login">Login</a></li>
+                    <li><a routerLink="register">Register</a></li>
+                    <li><a routerLink="account">Account</a></li>
                   </ul>
                 </li>
                 <li><a routerLink="wishlist"><i class="fa fa-heart-o"></i></a></li>
@@ -125,7 +125,7 @@
                           <a href="#"><img src="././assets/img/menu/1.jpg" alt="cart-image"></a>
                         </div>
                         <div class="cart-content">
-                          <h6><a href="product.html">Products Name</a></h6>
+                          <h6><a href="product">Products Name</a></h6>
                           <span>1 × $399.00</span>
                         </div>
                         <a class="del-icone" href="#"><i class="fa fa-window-close-o"></i></a>
@@ -253,8 +253,8 @@
               <div class="footer-content">
                 <div class="loc-address">
                   <span><i class="fa fa-map-marker"></i>184 Main Rd E, St Albans VIC 3021, Australia.</span>
-                  <span><i class="fa fa-envelope-o"></i>Mail Us : yourinfo@example.com</span>
-                  <span><i class="fa fa-phone"></i>Phone: + 00 254 254565 54</span>
+                  <span><i class="fa fa-envelope-o"></i><a href="mailto:yourinfo@example.com">Mail Us : yourinfo@example.com</a></span>
+                  <span><i class="fa fa-phone"></i><a href="tel:+0025425456554">Phone: + 00 254 254565 54</a></span>
                 </div>
                 <div class="payment-mth"><a href="#"><img class="img" src="././assets/img/footer/1.png" alt="payment-image"></a></div>
               </div>
@@ -284,10 +284,10 @@
               <h3 class="footer-title">My Account</h3>
               <div class="footer-content">
                 <ul class="footer-list">
-                  <li><a href="account.html">My account</a></li>
-                  <li><a href="#">Checkout</a></li>
-                  <li><a href="#">Login</a></li>
-                  <li><a href="#">address</a></li>
+                  <li><a routerLink="account">My account</a></li>
+                  <li><a routerLink="checkout">Checkout</a></li>
+                  <li><a routerLink="login">Login</a></li>
+                  <li><a routerLink="account">address</a></li>
                   <li><a href="#">Order status</a></li>
                   <li><a href="#">Site Map</a></li>
                 </ul>
@@ -301,7 +301,7 @@
               <h3 class="footer-title">customer service</h3>
               <div class="footer-content">
                 <ul class="footer-list">
-                  <li><a href="account.html">My account</a></li>
+                  <li><a routerLink="account">My account</a></li>
                   <li><a href="#">New</a></li>
                   <li><a href="#">Gift Cards</a></li>
                   <li><a href="#">Return Policy</a></li>
@@ -318,7 +318,7 @@
               <h3 class="footer-title">Let Us Help You</h3>
               <div class="footer-content">
                 <ul class="footer-list">
-                  <li><a href="#">Your Account</a></li>
+                  <li><a routerLink="account">Your Account</a></li>
                   <li><a href="#">Your Orders</a></li>
                   <li><a href="#">Shipping</a></li>
                   <li><a href="#">Amazon Prime</a></li>

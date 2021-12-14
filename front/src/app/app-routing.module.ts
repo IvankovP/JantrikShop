@@ -12,6 +12,10 @@ import {CheckoutComponent} from "./checkout/checkout.component";
 import {WishlistComponent} from "./wishlist/wishlist.component";
 import {ProductComponent} from "./product/product.component";
 import {BlogDetailsComponent} from "./blog-details/blog-details.component";
+import {AccountComponent} from "./account/account.component";
+import {ForgotPasswordComponent} from "./forgot-password/forgot-password.component";
+import {LoginComponent} from "./login/login.component";
+import {RegisterComponent} from "./register/register.component";
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -23,6 +27,11 @@ const routes: Routes = [
   {path: 'compare', component: CompareComponent},
   {path: 'checkout', component: CheckoutComponent},
   {path: 'wishlist', component: WishlistComponent},
+  {path: 'product', component: ProductComponent},
+  {path: 'account', component: AccountComponent},
+  {path: 'forgot-password', component: ForgotPasswordComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent},
   {path: 'shop/product', component: ProductComponent},
   {path: 'blog/details', component: BlogDetailsComponent},
   {path: '**', component: ErrorComponent},
