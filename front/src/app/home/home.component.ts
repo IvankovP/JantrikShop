@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
     ==================================================
      1. Newsletter Popup
      2. Mobile Menu Activation
-     3 Checkout Page Activation
+     3. Checkout Page Activation
      4. NivoSlider Activation
      5. New Products Activation
      6. New Upsell Product Activation
@@ -35,8 +35,8 @@ export class HomeComponent implements OnInit {
      17. Testimonial Slick Carousel
      18. Best Seller Activation
      19. Best Product Activation
-     20. Blog Realted Post activation
-     21.Best Seller  Unique Activation
+     20. Blog Related Post activation
+     21. Best Seller Unique Activation
     ================================================*/
       "use Strict";
       /*--------------------------
@@ -87,7 +87,7 @@ export class HomeComponent implements OnInit {
         animSpeed: 300,
         pauseTime: 5000,
         directionNav: false,
-        manualAdvance: true,
+        manualAdvance: false,
         controlNavThumbs: false,
         pauseOnHover: true,
         controlNav: true,
@@ -99,11 +99,10 @@ export class HomeComponent implements OnInit {
       5. New Products Activation
       -----------------------------------------------------*/
       $('.new-pro-active').owlCarousel({
-        loop: false,
+        loop: true,
         nav: true,
         dots: false,
         smartSpeed: 1000,
-
         navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
         margin: 30,
         responsive: {
@@ -130,11 +129,10 @@ export class HomeComponent implements OnInit {
       6. New Upsell Product Activation
       -----------------------------------------------------*/
       $('.new-upsell-pro').owlCarousel({
-        loop: false,
+        loop: true,
         nav: true,
         dots: false,
         smartSpeed: 1000,
-
         navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
         margin: 30,
         responsive: {
@@ -167,16 +165,16 @@ export class HomeComponent implements OnInit {
             .find('.owl-item').removeClass('last')
             .eq(event.item.index + event.page.size - 1).addClass('last');
         }).owlCarousel({
-        loop: false,
+        loop: true,
         nav: true,
         dots: false,
         smartSpeed: 1500,
+        autoplay: 3000,
         navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
         margin: 1,
         responsive: {
           0: {
-            items: 1,
-            autoplay:true
+            items: 1
           },
           480: {
             items: 2
@@ -199,16 +197,16 @@ export class HomeComponent implements OnInit {
             .find('.owl-item').removeClass('last')
             .eq(event.item.index + event.page.size - 1).addClass('last');
         }).owlCarousel({
-        loop: false,
+        loop: true,
         nav: true,
         dots: false,
         smartSpeed: 1200,
+        autoplay: 5000,
         navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
         margin: 1,
         responsive: {
           0: {
-            items: 1,
-            autoplay:true
+            items: 1
           },
           480: {
             items: 2
@@ -229,7 +227,7 @@ export class HomeComponent implements OnInit {
       9. Hand Tool Activation
       -----------------------------------------------------*/
       $('.hand-tool-active').owlCarousel({
-        loop: false,
+        loop: true,
         nav: true,
         dots: false,
         smartSpeed: 1200,
@@ -269,15 +267,15 @@ export class HomeComponent implements OnInit {
 
 
       }).owlCarousel({
-        loop: false,
+        loop: true,
         nav: false,
         dots: false,
         smartSpeed: 1200,
+        autoplay: 3000,
         margin: 1,
         responsive: {
           0: {
-            items: 1,
-            autoplay:true
+            items: 1
           },
           480: {
             items: 3
@@ -295,7 +293,7 @@ export class HomeComponent implements OnInit {
       11. Blog Activation
       -----------------------------------------------------*/
       $('.blog-active').owlCarousel({
-        loop: false,
+        loop: true,
         nav: true,
         dots: false,
         smartSpeed: 1000,
@@ -318,7 +316,7 @@ export class HomeComponent implements OnInit {
       12. Blog two Activation
       -----------------------------------------------------*/
       $('.blog-active2').owlCarousel({
-        loop: false,
+        loop: true,
         nav: true,
         dots: false,
         smartSpeed: 1000,
@@ -414,7 +412,7 @@ export class HomeComponent implements OnInit {
           .find('.owl-item').removeClass('last')
           .eq(event.item.index + event.page.size - 1).addClass('last');
       }).owlCarousel({
-        loop: false,
+        loop: true,
         nav: true,
         dots: false,
         smartSpeed: 1000,
@@ -441,7 +439,7 @@ export class HomeComponent implements OnInit {
       -----------------------------------------------------*/
       $('.best-seller-pro-two')
         .owlCarousel({
-          loop: false,
+          loop: true,
           nav: false,
           dots: false,
           smartSpeed: 1200,
@@ -464,7 +462,7 @@ export class HomeComponent implements OnInit {
       20. Blog Realted Post activation
       --------------------------------------*/
       $('.blog-related-post-active').owlCarousel({
-        loop: false,
+        loop: true,
         margin: 30,
         smartSpeed: 1000,
         nav: false,
@@ -519,5 +517,4 @@ export class HomeComponent implements OnInit {
         }
       })
   }
-
 }
