@@ -1,360 +1,544 @@
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-<!-- Wrapper Start -->
-<div class="wrapper homepage">
-  <!-- Newsletter Popup Start -->
-  <div class="popup_wrapper">
-    <div class="test">
-      <span class="popup_off">Close</span>
-      <div class="subscribe_area text-center mt-60">
-        <h2>Newsletter</h2>
-        <p>Subscribe to the Jantrik mailing list to receive updates on new arrivals, special offers and other discount information.</p>
-        <div class="subscribe-form-group">
-          <form action="#">
-            <input autocomplete="off" type="text" name="message" id="message" placeholder="Enter your email address">
-            <button type="submit">subscribe</button>
-          </form>
-        </div>
-        <div class="subscribe-bottom mt-15">
-          <input type="checkbox" id="newsletter-permission">
-          <label for="newsletter-permission">Don't show this popup again</label>
+<div class="main-wrapper">
+  <header>
+    <!-- Header top area start -->
+    <div class="header-top">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col">
+            <div class="welcome-text">
+              <p>World Wide Completely Free Returns and Shipping</p>
+            </div>
+          </div>
+          <div class="col d-none d-lg-block">
+            <div class="top-nav">
+              <ul>
+                <li><a href="tel:0123456789"><i class="fa fa-phone"></i> +012 3456 789</a></li>
+                <li><a href="mailto:demo@example.com"><i class="fa fa-envelope-o"></i> demo@example.com</a></li>
+                <li><a href="my-account.html"><i class="fa fa-user"></i> Account</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Newsletter Popup End -->
-  <!-- Header Area Start -->
-  <header>
-    <!-- Header Top Start -->
-    <div class="header-top">
+    <!-- Header top area end -->
+    <!-- Header action area start -->
+    <div class="header-bottom  d-none d-lg-block">
       <div class="container">
-        <div class="row">
-          <!-- Header Top left Start -->
-          <div class="col-lg-4 col-md-12 d-center">
-            <div class="header-top-left">
-              <img src="./assets/img/icon/call.png" alt=""><a href="tel:+112223333">Call Us : +11 222 3333</a>
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-3 col">
+            <div class="header-logo">
+              <a href="index.html"><img src="assets/images/logo/logo.png" alt="Site Logo" /></a>
             </div>
           </div>
-          <!-- Header Top left End -->
-          <!-- Search Box Start -->
-          <div class="col-lg-4 col-md-6 ml-auto mr-auto">
-            <div class="search-box-view">
+          <div class="col-lg-6 d-none d-lg-block">
+            <div class="search-element">
               <form action="#">
-                <input type="text" class="email" placeholder="Search Your Product" name="product">
-                <button type="submit" class="submit"></button>
+                <input type="text" placeholder="Search" />
+                <button><i class="pe-7s-search"></i></button>
               </form>
             </div>
           </div>
-          <!-- Search Box End -->
-          <!-- Header Top Right Start -->
-          <div class="col-lg-4 col-md-12">
-            <div class="header-top-right">
-              <ul class="header-list-menu f-right">
-                <!-- Language Start -->
-                <li><a href="#">Language: English <i class="fa fa-angle-down"></i></a>
-                  <ul class="ht-dropdown">
-                    <li><a href="#">Spanish</a></li>
-                    <li><a href="#">Bengali</a></li>
-                    <li><a href="#">Russian</a></li>
-                  </ul>
-                </li>
-                <!-- Language End -->
-                <!-- Currency Start -->
-                <li><a href="#">Currency:  USD <i class="fa fa-angle-down"></i></a>
-                  <ul class="ht-dropdown">
-                    <li><a href="#">USD</a></li>
-                    <li><a href="#">GBP</a></li>
-                    <li><a href="#">EUR</a></li>
-                  </ul>
-                </li>
-                <!-- Currency End -->
-              </ul>
-              <!-- Header-list-menu End -->
+          <div class="col-lg-3 col">
+            <div class="header-actions">
+              <!-- Single Wedge Start -->
+              <a href="#offcanvas-wishlist" class="header-action-btn offcanvas-toggle">
+                <i class="pe-7s-like"></i>
+              </a>
+              <!-- Single Wedge End -->
+              <a href="#offcanvas-cart" class="header-action-btn header-action-btn-cart offcanvas-toggle pr-0">
+                <i class="pe-7s-shopbag"></i>
+                <span class="header-action-num">01</span>
+                <!-- <span class="cart-amount">€30.00</span> -->
+              </a>
+              <a href="#offcanvas-mobile-menu" class="header-action-btn header-action-btn-menu offcanvas-toggle d-lg-none">
+                <i class="pe-7s-menu"></i>
+              </a>
             </div>
           </div>
-          <!-- Header Top Right End -->
         </div>
       </div>
-      <!-- Container End -->
     </div>
-    <!-- Header Top End -->
-    <!-- Header Bottom Start -->
-    <div class="header-bottom header-sticky">
+    <!-- Header action area end -->
+    <!-- Header action area start -->
+    <div class="header-bottom d-lg-none sticky-nav style-1">
       <div class="container">
-        <div class="row">
-          <div class="col-xl-3 col-lg-2 col-sm-5 col-5">
-            <div class="logo">
-              <a routerLink=""><img src="././assets/img/logo/logo.png" alt="logo-image"></a>
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-3 col">
+            <div class="header-logo">
+              <a href="index.html"><img src="assets/images/logo/logo.png" alt="Site Logo" /></a>
             </div>
           </div>
-          <!-- Primary Vertical-Menu End -->
-          <!-- Search Box Start -->
-          <div class="col-xl-6 col-lg-7 d-none d-lg-block">
-            <div class="middle-menu pull-right">
-              <nav>
-                <ul class="middle-menu-list">
-                  <li><a routerLink="">home</a></li>
-                  <li><a routerLink="shop">shop</a></li>
-                  <li><a routerLink="blog">Blog</a></li>
-                  <li><a routerLink="contacts">contact us</a></li>
-                  <li><a routerLink="about">about us</a></li>
-                </ul>
-              </nav>
+          <div class="col-lg-6 d-none d-lg-block">
+            <div class="search-element">
+              <form action="#">
+                <input type="text" placeholder="Search" />
+                <button><i class="pe-7s-search"></i></button>
+              </form>
             </div>
           </div>
-          <!-- Search Box End -->
-          <!-- Cartt Box Start -->
-          <div class="col-lg-3 col-sm-7 col-7">
-            <div class="cart-box text-right">
-              <ul>
-                <li><a routerLink="compare"><i class="fa fa-cog"></i></a>
-                  <ul class="ht-dropdown">
-                    <li><a routerLink="login">Login</a></li>
-                    <li><a routerLink="register">Register</a></li>
-                    <li><a routerLink="account">Account</a></li>
-                  </ul>
-                </li>
-                <li><a routerLink="wishlist"><i class="fa fa-heart-o"></i></a></li>
-                <li><a routerLink="cart"><i class="fa fa-shopping-basket"></i><span class="cart-counter">2</span></a>
-                  <ul class="ht-dropdown main-cart-box">
-                    <li>
-                      <!-- Cart Box Start -->
-                      <div class="single-cart-box">
-                        <div class="cart-img">
-                          <a routerLink="product"><img src="././assets/img/menu/1.jpg" alt="cart-image"></a>
-                        </div>
-                        <div class="cart-content">
-                          <h6><a href="product">Products Name</a></h6>
-                          <span>1 × $399.00</span>
-                        </div>
-                        <a class="del-icone" href="#"><i class="fa fa-window-close-o"></i></a>
-                      </div>
-                      <!-- Cart Box End -->
-                      <!-- Cart Box Start -->
-                      <div class="single-cart-box">
-                        <div class="cart-img">
-                          <a routerLink="product"><img src="././assets/img/menu/2.jpg" alt="cart-image"></a>
-                        </div>
-                        <div class="cart-content">
-                          <h6><a routerLink="product">Products Name</a></h6>
-                          <span>2 × $299.00</span>
-                        </div>
-                        <a class="del-icone" href="#"><i class="fa fa-window-close-o"></i></a>
-                      </div>
-                      <!-- Cart Box End -->
-                      <!-- Cart Footer Inner Start -->
-                      <div class="cart-footer fix">
-                        <h5>total :<span class="f-right">$698.00</span></h5>
-                        <div class="cart-actions">
-                          <a class="checkout" routerLink="checkout">Checkout</a>
-                        </div>
-                      </div>
-                      <!-- Cart Footer Inner End -->
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+          <div class="col-lg-3 col">
+            <div class="header-actions">
+              <!-- Single Wedge Start -->
+              <a href="#offcanvas-wishlist" class="header-action-btn offcanvas-toggle">
+                <i class="pe-7s-like"></i>
+              </a>
+              <!-- Single Wedge End -->
+              <a href="#offcanvas-cart" class="header-action-btn header-action-btn-cart offcanvas-toggle pr-0">
+                <i class="pe-7s-shopbag"></i>
+                <span class="header-action-num">01</span>
+                <!-- <span class="cart-amount">€30.00</span> -->
+              </a>
+              <a href="#offcanvas-mobile-menu" class="header-action-btn header-action-btn-menu offcanvas-toggle d-lg-none">
+                <i class="pe-7s-menu"></i>
+              </a>
             </div>
           </div>
-          <!-- Cartt Box End -->
-          <div class="col-sm-12 d-lg-none">
-            <div class="mobile-menu">
-              <nav>
-                <ul>
-                  <li><a routerLink="">home</a></li>
-                  <li><a routerLink="shop">shop</a></li>
-                  <li><a routerLink="blog">Blog</a></li>
-                  <li><a routerLink="contacts">contact us</a></li>
-                  <li><a routerLink="about">about us</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <!-- Mobile Menu  End -->
-        </div>
-        <!-- Row End -->
-      </div>
-      <!-- Container End -->
-    </div>
-    <!-- Header Bottom End -->
-  </header>
-  <!-- Header Area End -->
-  <router-outlet></router-outlet>
-  <!-- Blog Page End -->
-  <!-- Brand Logo Start -->
-  <div class="brand-area pb-60">
-    <div class="container">
-      <!-- Brand Banner Start -->
-      <div class="brand-banner owl-carousel">
-        <div class="single-brand">
-          <a href="#"><img class="img" src="././assets/img/brand/1.png" alt="brand-image"></a>
-        </div>
-        <div class="single-brand">
-          <a href="#"><img src="././assets/img/brand/2.png" alt="brand-image"></a>
-        </div>
-        <div class="single-brand">
-          <a href="#"><img src="././assets/img/brand/3.png" alt="brand-image"></a>
-        </div>
-        <div class="single-brand">
-          <a href="#"><img src="././assets/img/brand/4.png" alt="brand-image"></a>
-        </div>
-        <div class="single-brand">
-          <a href="#"><img src="././assets/img/brand/5.png" alt="brand-image"></a>
-        </div>
-        <div class="single-brand">
-          <a href="#"><img class="img" src="././assets/img/brand/1.png" alt="brand-image"></a>
-        </div>
-        <div class="single-brand">
-          <a href="#"><img src="././assets/img/brand/2.png" alt="brand-image"></a>
-        </div>
-        <div class="single-brand">
-          <a href="#"><img src="././assets/img/brand/3.png" alt="brand-image"></a>
-        </div>
-        <div class="single-brand">
-          <a href="#"><img src="././assets/img/brand/4.png" alt="brand-image"></a>
-        </div>
-        <div class="single-brand">
-          <a href="#"><img src="././assets/img/brand/5.png" alt="brand-image"></a>
         </div>
       </div>
-      <!-- Brand Banner End -->
     </div>
-  </div>
-  <!-- Brand Logo End -->
-
-  <footer class="off-white-bg">
-    <!-- Footer Top Start -->
-    <div class="footer-top pt-50 pb-60">
+    <!-- Header action area end -->
+    <!-- header navigation area start -->
+    <div class="header-nav-area d-none d-lg-block sticky-nav">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mr-auto ml-auto">
-            <div class="newsletter text-center">
-              <div class="main-news-desc">
-                <div class="news-desc">
-                  <h3>Sign Up For Newsletters</h3>
-                  <p>Get e-mail updates about our latest shop and special offers.</p>
-                </div>
-              </div>
-              <div class="newsletter-box">
-                <form action="#">
-                  <input class="subscribe" placeholder="Enter your email address" name="email" id="subscribe" type="text">
-                  <button type="submit" class="submit">subscribe</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <!-- Single Footer Start -->
-          <div class="col-lg-4  col-md-7 col-sm-6">
-            <div class="single-footer">
-              <h3>Contact us</h3>
-              <div class="footer-content">
-                <div class="loc-address">
-                  <span><i class="fa fa-map-marker"></i>184 Main Rd E, St Albans VIC 3021, Australia.</span>
-                  <span><i class="fa fa-envelope-o"></i><a href="mailto:yourinfo@example.com">Mail Us : yourinfo@example.com</a></span>
-                  <span><i class="fa fa-phone"></i><a href="tel:+0025425456554">Phone: + 00 254 254565 54</a></span>
-                </div>
-                <div class="payment-mth"><a href="#"><img class="img" src="././assets/img/footer/1.png" alt="payment-image"></a></div>
-              </div>
-            </div>
-          </div>
-          <!-- Single Footer Start -->
-          <!-- Single Footer Start -->
-          <div class="col-lg-2  col-md-5 col-sm-6 footer-full">
-            <div class="single-footer">
-              <h3 class="footer-title">Information</h3>
-              <div class="footer-content">
-                <ul class="footer-list">
-                  <li><a href="#">Site Map</a></li>
-                  <li><a href="#">Specials</a></li>
-                  <li><a href="#">Jobs</a></li>
-                  <li><a href="#">Delivery Information</a></li>
-                  <li><a href="#">Order History</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- Single Footer Start -->
-          <!-- Single Footer Start -->
-          <div class="col-lg-2  col-md-4 col-md-4 col-sm-6 footer-full">
-            <div class="single-footer">
-              <h3 class="footer-title">My Account</h3>
-              <div class="footer-content">
-                <ul class="footer-list">
-                  <li><a routerLink="account">My account</a></li>
-                  <li><a routerLink="checkout">Checkout</a></li>
-                  <li><a routerLink="login">Login</a></li>
-                  <li><a routerLink="account">address</a></li>
-                  <li><a href="#">Order status</a></li>
-                  <li><a href="#">Site Map</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- Single Footer Start -->
-          <!-- Single Footer Start -->
-          <div class="col-lg-2 col-md-4 col-sm-6 footer-full">
-            <div class="single-footer">
-              <h3 class="footer-title">customer service</h3>
-              <div class="footer-content">
-                <ul class="footer-list">
-                  <li><a routerLink="account">My account</a></li>
-                  <li><a href="#">New</a></li>
-                  <li><a href="#">Gift Cards</a></li>
-                  <li><a href="#">Return Policy</a></li>
-                  <li><a href="#">Your Orders</a></li>
-                  <li><a href="#">Subway</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- Single Footer Start -->
-          <!-- Single Footer Start -->
-          <div class="col-lg-2 col-md-4 col-sm-6 footer-full">
-            <div class="single-footer">
-              <h3 class="footer-title">Let Us Help You</h3>
-              <div class="footer-content">
-                <ul class="footer-list">
-                  <li><a routerLink="account">Your Account</a></li>
-                  <li><a href="#">Your Orders</a></li>
-                  <li><a href="#">Shipping</a></li>
-                  <li><a href="#">Amazon Prime</a></li>
-                  <li><a href="#">Replacements</a></li>
-                  <li><a href="#">Manage </a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- Single Footer Start -->
-        </div>
-        <!-- Row End -->
-      </div>
-      <!-- Container End -->
-    </div>
-    <!-- Footer Top End -->
-    <!-- Footer Bottom Start -->
-    <div class="footer-bottom off-white-bg2">
-      <div class="container">
-        <div class="footer-bottom-content">
-          <p class="copy-right-text">Copyright © <a  href="#">Jantrik</a> All Rights Reserved.</p>
-          <div class="footer-social-content">
-            <ul class="social-content-list">
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-wifi"></i></a></li>
-              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <div class="header-nav">
+          <div class="main-menu position-relative">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="shop">Shop</a></li>
+              <li><a href="blog">Blog</a></li>
+              <li><a href="contacts">Contacts</a></li>
+              <li><a href="about">About</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <!-- Container End -->
     </div>
-    <!-- Footer Bottom End -->
-  </footer>
-  <!-- Footer End -->
+    <!-- header navigation area end -->
+    <div class="mobile-search-box d-lg-none">
+      <div class="container">
+        <!-- mobile search start -->
+        <div class="search-element max-width-100">
+          <form action="#">
+            <input type="text" placeholder="Search" />
+            <button><i class="pe-7s-search"></i></button>
+          </form>
+        </div>
+        <!-- mobile search start -->
+      </div>
+    </div>
+  </header>
+  <!-- offcanvas overlay start -->
+  <div class="offcanvas-overlay"></div>
+  <!-- offcanvas overlay end -->
+  <!-- OffCanvas Wishlist Start -->
+  <div id="offcanvas-wishlist" class="offcanvas offcanvas-wishlist">
+    <div class="inner">
+      <div class="head">
+        <span class="title">Wishlist</span>
+        <button class="offcanvas-close">×</button>
+      </div>
+      <div class="body customScroll">
+        <ul class="minicart-product-list">
+          <li>
+            <a href="single-product.html" class="image"><img src="assets/images/product-image/1.webp" alt="Cart product Image"></a>
+            <div class="content">
+              <a href="single-product.html" class="title">Modern Smart Phone</a>
+              <span class="quantity-price">1 x <span class="amount">$21.86</span></span>
+              <a href="#" class="remove">×</a>
+            </div>
+          </li>
+          <li>
+            <a href="single-product.html" class="image"><img src="assets/images/product-image/2.webp" alt="Cart product Image"></a>
+            <div class="content">
+              <a href="single-product.html" class="title">Bluetooth Headphone</a>
+              <span class="quantity-price">1 x <span class="amount">$13.28</span></span>
+              <a href="#" class="remove">×</a>
+            </div>
+          </li>
+          <li>
+            <a href="single-product.html" class="image"><img src="assets/images/product-image/3.webp" alt="Cart product Image"></a>
+            <div class="content">
+              <a href="single-product.html" class="title">Smart Music Box</a>
+              <span class="quantity-price">1 x <span class="amount">$17.34</span></span>
+              <a href="#" class="remove">×</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="foot">
+        <div class="buttons">
+          <a href="wishlist.html" class="btn btn-dark btn-hover-primary mt-30px">view wishlist</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- OffCanvas Wishlist End -->
+  <!-- OffCanvas Cart Start -->
+  <div id="offcanvas-cart" class="offcanvas offcanvas-cart">
+    <div class="inner">
+      <div class="head">
+        <span class="title">Cart</span>
+        <button class="offcanvas-close">×</button>
+      </div>
+      <div class="body customScroll">
+        <ul class="minicart-product-list">
+          <li>
+            <a href="single-product.html" class="image"><img src="assets/images/product-image/1.webp" alt="Cart product Image"></a>
+            <div class="content">
+              <a href="single-product.html" class="title">Modern Smart Phone</a>
+              <span class="quantity-price">1 x <span class="amount">$18.86</span></span>
+              <a href="#" class="remove">×</a>
+            </div>
+          </li>
+          <li>
+            <a href="single-product.html" class="image"><img src="assets/images/product-image/2.webp" alt="Cart product Image"></a>
+            <div class="content">
+              <a href="single-product.html" class="title">Bluetooth Headphone</a>
+              <span class="quantity-price">1 x <span class="amount">$43.28</span></span>
+              <a href="#" class="remove">×</a>
+            </div>
+          </li>
+          <li>
+            <a href="single-product.html" class="image"><img src="assets/images/product-image/3.webp" alt="Cart product Image"></a>
+            <div class="content">
+              <a href="single-product.html" class="title">Smart Music Box</a>
+              <span class="quantity-price">1 x <span class="amount">$37.34</span></span>
+              <a href="#" class="remove">×</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="foot">
+        <div class="buttons mt-30px">
+          <a href="cart.html" class="btn btn-dark btn-hover-primary mb-30px">view cart</a>
+          <a href="checkout.html" class="btn btn-outline-dark current-btn">checkout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- OffCanvas Cart End -->
+  <!-- OffCanvas Menu Start -->
+  <div id="offcanvas-mobile-menu" class="offcanvas offcanvas-mobile-menu">
+    <button class="offcanvas-close"></button>
+    <div class="user-panel">
+      <ul>
+        <li><a href="tel:0123456789"><i class="fa fa-phone"></i> +012 3456 789</a></li>
+        <li><a href="mailto:demo@example.com"><i class="fa fa-envelope-o"></i> demo@example.com</a></li>
+        <li><a href="my-account.html"><i class="fa fa-user"></i> Account</a></li>
+      </ul>
+    </div>
+    <div class="inner customScroll">
+      <div class="offcanvas-menu mb-4">
+        <ul>
+          <li><a routerLink=""><span class="menu-text">Home</span></a></li>
+          <li><a routerLink="shop"><span class="menu-text">Shop</span></a></li>
+          <li><a routerLink="blog"><span class="menu-text">Blog</span></a></li>
+          <li><a routerLink="contact">Contact Us</a></li>
+          <li><a routerLink="about">About</a></li><li>
+        </ul>
+      </div>
+      <!-- OffCanvas Menu End -->
+      <div class="offcanvas-social mt-auto">
+        <ul>
+          <li>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-google"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- OffCanvas Menu End -->
+
+
+  <router-outlet></router-outlet>
+
+
+  <!-- Footer Area Start -->
+  <div class="footer-area">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <!-- Start single blog -->
+            <div class="col-md-6 col-lg-3 mb-md-30px mb-lm-30px">
+              <div class="single-wedge">
+                <div class="footer-logo">
+                  <a href="index.html"><img src="assets/images/logo/footer-logo.png" alt=""></a>
+                </div>
+                <p class="about-text">Lorem ipsum dolor sit amet consl adipisi elit, sed do eiusmod templ incididunt ut labore
+                </p>
+                <ul class="link-follow">
+                  <li>
+                    <a class="m-0" title="Twitter" target="_blank" rel="noopener noreferrer" href="#"><i class="fa fa-facebook"
+                                                                                                         aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                    <a title="Tumblr" target="_blank" rel="noopener noreferrer" href="#"><i class="fa fa-tumblr" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a title="Facebook" target="_blank" rel="noopener noreferrer" href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a title="Instagram" target="_blank" rel="noopener noreferrer" href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- End single blog -->
+            <!-- Start single blog -->
+            <div class="col-md-6 col-lg-3 col-sm-6 mb-lm-30px pl-lg-60px">
+              <div class="single-wedge">
+                <h4 class="footer-herading">Services</h4>
+                <div class="footer-links">
+                  <div class="footer-row">
+                    <ul class="align-items-center">
+                      <li class="li"><a class="single-link" href="account">My Account</a></li>
+                      <li class="li"><a class="single-link" href="contact">Contact</a></li>
+                      <li class="li"><a class="single-link" href="cart">Shopping cart</a></li>
+                      <li class="li"><a class="single-link" href="shop">Shop</a></li>
+                      <li class="li"><a class="single-link" href="login">Services Login</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End single blog -->
+            <!-- Start single blog -->
+            <div class="col-md-6 col-lg-3 col-sm-12">
+              <div class="single-wedge">
+                <h4 class="footer-herading">Contact Info</h4>
+                <div class="footer-links">
+                  <!-- News letter area -->
+                  <p class="address">Address: Your Address Goes Here.</p>
+                  <p class="phone">Phone/Fax:<a href="tel:0123456789"> 0123456789</a></p>
+                  <p class="mail">Email:<a href="mailto:demo@example.com"> demo@example.com</a></p>
+                  <p class="mail"><a href="https://demo@example.com"> demo@example.com</a></p>
+                  <!-- News letter area  End -->
+                </div>
+              </div>
+            </div>
+            <!-- End single blog -->
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="line-shape-top line-height-1">
+            <div class="row flex-md-row-reverse align-items-center">
+              <div class="col-md-6 text-center text-md-end">
+                <div class="payment-mth"><a href="#"><img class="img img-fluid" src="assets/images/icons/payment.png" alt="payment-image"></a></div>
+              </div>
+              <div class="col-md-6 text-center text-md-start">
+                <p class="copy-text"> ©2021 <strong>Hmart</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Area End -->
 </div>
-<!-- Wrapper End -->
+
+
+<!-- Modal -->
+<div class="modal modal-2 fade" id="exampleModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> <i class="pe-7s-close"></i></button>
+        <div class="row">
+          <div class="col-lg-6 col-sm-12 col-xs-12 mb-lm-30px mb-md-30px mb-sm-30px">
+            <!-- Swiper -->
+            <div class="swiper-container gallery-top">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-responsive m-auto" src="assets/images/product-image/zoom-image/1.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-responsive m-auto" src="assets/images/product-image/zoom-image/2.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-responsive m-auto" src="assets/images/product-image/zoom-image/3.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-responsive m-auto" src="assets/images/product-image/zoom-image/4.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-responsive m-auto" src="assets/images/product-image/zoom-image/5.webp" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-container gallery-thumbs mt-20px slider-nav-style-1 small-nav">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-responsive m-auto" src="assets/images/product-image/small-image/1.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-responsive m-auto" src="assets/images/product-image/small-image/2.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-responsive m-auto" src="assets/images/product-image/small-image/3.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-responsive m-auto" src="assets/images/product-image/small-image/4.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-responsive m-auto" src="assets/images/product-image/small-image/5.webp" alt="">
+                </div>
+              </div>
+              <!-- Add Arrows -->
+              <div class="swiper-buttons">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="product-details-content quickview-content">
+              <h2>Modern Smart Phone</h2>
+              <div class="pricing-meta">
+                <ul class="d-flex">
+                  <li class="new-price">$20.90</li>
+                </ul>
+              </div>
+              <div class="pro-details-rating-wrap">
+                <div class="rating-product">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <span class="read-review"><a class="reviews" href="#">( 2 Review )</a></span>
+              </div>
+              <p class="mt-30px">Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmll tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mill veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exet commodo consequat. Duis aute irure dolor</p>
+              <div class="pro-details-categories-info pro-details-same-style d-flex m-0">
+                <span>SKU:</span>
+                <ul class="d-flex">
+                  <li>
+                    <a href="#">Ch-256xl</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="pro-details-categories-info pro-details-same-style d-flex m-0">
+                <span>Categories: </span>
+                <ul class="d-flex">
+                  <li>
+                    <a href="#">Smart Device, </a>
+                  </li>
+                  <li>
+                    <a href="#">ETC</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="pro-details-categories-info pro-details-same-style d-flex m-0">
+                <span>Tags: </span>
+                <ul class="d-flex">
+                  <li>
+                    <a href="#">Smart Device, </a>
+                  </li>
+                  <li>
+                    <a href="#">Phone</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="pro-details-quality">
+                <div class="cart-plus-minus">
+                  <input class="cart-plus-minus-box" type="text" name="qtybutton" value="1" />
+                </div>
+                <div class="pro-details-cart">
+                  <button class="add-cart"> Add To
+                    Cart</button>
+                </div>
+                <div class="pro-details-compare-wishlist pro-details-wishlist ">
+                  <a href="wishlist.html"><i class="pe-7s-like"></i></a>
+                </div>
+              </div>
+              <div class="payment-img">
+                <a href="#"><img src="assets/images/icons/payment.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal end -->
+<!-- Modal Cart -->
+<div class="modal customize-class fade" id="exampleModal-Cart" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="pe-7s-close"></i></button>
+        <div class="tt-modal-messages">
+          <i class="pe-7s-check"></i> Added to cart successfully!
+        </div>
+        <div class="tt-modal-product">
+          <div class="tt-img">
+            <img src="assets/images/product-image/1.webp" alt="Modern Smart Phone">
+          </div>
+          <h2 class="tt-title"><a href="#">Modern Smart Phone</a></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal wishlist -->
+<div class="modal customize-class fade" id="exampleModal-Wishlist" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="pe-7s-close"></i></button>
+        <div class="tt-modal-messages">
+          <i class="pe-7s-check"></i> Added to Wishlist successfully!
+        </div>
+        <div class="tt-modal-product">
+          <div class="tt-img">
+            <img src="assets/images/product-image/1.webp" alt="Modern Smart Phone">
+          </div>
+          <h2 class="tt-title"><a href="#">Modern Smart Phone</a></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal compare -->
+<div class="modal customize-class fade" id="exampleModal-Compare" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="pe-7s-close"></i></button>
+        <div class="tt-modal-messages">
+          <i class="pe-7s-check"></i> Added to compare successfully!
+        </div>
+        <div class="tt-modal-product">
+          <div class="tt-img">
+            <img src="assets/images/product-image/1.webp" alt="Modern Smart Phone">
+          </div>
+          <h2 class="tt-title"><a href="#">Modern Smart Phone</a></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

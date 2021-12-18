@@ -1,13 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-@import "assets/css/meanmenu.min.css";
-@import "assets/css/animate.css";
-@import "assets/css/nivo-slider.css";
-@import "assets/css/owl.carousel.min.css";
-@import "assets/css/slick.css";
-@import "../node_modules/nouislider/dist/nouislider.min.css";
-@import "assets/css/font-awesome.min.css";
-@import "assets/css/jquery.fancybox.css";
 @import "assets/css/bootstrap.min.css";
-@import "assets/css/default.css";
+@import "assets/css/font.awesome.css";
+@import "assets/css/pe-icon-7-stroke.css";
+@import "assets/css/animate.min.css";
+@import "assets/css/swiper-bundle.min.css";
+@import "assets/css/venobox.css";
 @import "assets/css/style.css";
-@import "assets/css/responsive.css";

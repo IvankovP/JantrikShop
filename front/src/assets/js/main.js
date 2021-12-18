@@ -1,514 +1,521 @@
-
-/*================================================
-[  Table of contents  ]
-==================================================
- 1. Newsletter Popup
- 2. Mobile Menu Activation
- 3 Checkout Page Activation
- 4. NivoSlider Activation
- 5. New Products Activation
- 6. New Upsell Product Activation
- 7. Side Product Activation
- 8. Best Seller Activation
- 9. Hand Tool Activation
- 10. Brand Banner Activation
- 11. Blog Activation
- 12. Blog two Activation
- 13. WOW Js Activation
- 14. ScrollUp Activation
- 15. Sticky-Menu Activation
- 16. Price Slider Activation
- 17. Testimonial Slick Carousel
- 18. Best Seller Activation
- 19. Best Product Activation
- 20. Blog Realted Post activation
- 21.Best Seller  Unique Activation
+(function($) {
+    "use strict";
 
 
 
-================================================*/
-
-(function ($) {
-    "use Strict";
-    /*--------------------------
-    1. Newsletter Popup
-    ---------------------------*/
-    setTimeout(function () {
-        $('.popup_wrapper').css({
-            "opacity": "1",
-            "visibility": "visible"
-        });
-        $('.popup_off').on('click', function () {
-            $(".popup_wrapper").fadeOut(500);
-        })
-    }, 2500);
-
-    /*----------------------------
-    2. Mobile Menu Activation
-    -----------------------------*/
-    jQuery('.mobile-menu nav').meanmenu({
-        meanScreenWidth: "991",
-    });
-
-    /*----------------------------
-    3 Checkout Page Activation
-    -----------------------------*/
-     $('.categorie-title').on('click', function () {
-    $('.vertical-menu-list').slideToggle();
-    });
-
-    $('#showlogin').on('click', function () {
-        $('#checkout-login').slideToggle();
-    });
-    $('#showcoupon').on('click', function () {
-        $('#checkout_coupon').slideToggle();
-    });
-    $('#cbox').on('click', function () {
-        $('#cbox_info').slideToggle();
-    });
-    $('#ship-box').on('click', function () {
-        $('#ship-box-info').slideToggle();
-    });
-
-    /*----------------------------
-    4. NivoSlider Activation
-    -----------------------------*/
-    $('#slider').nivoSlider({
-        effect: 'random',
-        animSpeed: 300,
-        pauseTime: 5000,
-        directionNav: false,
-        manualAdvance: true,
-        controlNavThumbs: false,
-        pauseOnHover: true,
-        controlNav: true,
-        prevText: "<i class='zmdi zmdi-chevron-left'></i>",
-        nextText: "<i class='zmdi zmdi-chevron-right'></i>"
-    });
-
-    /*----------------------------------------------------
-    5. New Products Activation
-    -----------------------------------------------------*/
-    $('.new-pro-active').owlCarousel({
-            loop: false,
-            nav: true,
-            dots: false,
-            smartSpeed: 1000,
-
-            navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-            margin: 30,
-            responsive: {
-                0: {
-                    items: 1,
-                    autoplay:true
-                },
-                480: {
-                    items: 2
-                },
-                768: {
-                    items: 2
-                },
-                1000: {
-                    items: 2
-                },
-                1200: {
-                    items: 3
-                }
-            }
-
-        })
-    /*----------------------------------------------------
-    6. New Upsell Product Activation
-    -----------------------------------------------------*/
-    $('.new-upsell-pro').owlCarousel({
-            loop: false,
-            nav: true,
-            dots: false,
-            smartSpeed: 1000,
-
-            navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-            margin: 30,
-            responsive: {
-                0: {
-                    items: 1,
-                    autoplay:true
-                },
-                480: {
-                    items: 2
-                },
-                768: {
-                    items: 2
-                },
-                1000: {
-                    items: 3
-                },
-                1200: {
-                    items: 4
-                }
-            }
-
-        })
-
-    /*----------------------------------------------------
-    7. Side Product Activation
-    -----------------------------------------------------*/
-    $('.side-product-list-active')
-        .on('changed.owl.carousel initialized.owl.carousel', function (event) {
-            $(event.target)
-                .find('.owl-item').removeClass('last')
-                .eq(event.item.index + event.page.size - 1).addClass('last');
-        }).owlCarousel({
-            loop: false,
-            nav: true,
-            dots: false,
-            smartSpeed: 1500,
-            navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-            margin: 1,
-            responsive: {
-                0: {
-                    items: 1,
-                    autoplay:true
-                },
-               480: {
-                    items: 2
-                },
-                768: {
-                    items: 2
-                },
-                991: {
-                    items: 1
-                }
-            }
-        })
-
-    /*----------------------------------------------------
-    8. Best Seller Activation
-    -----------------------------------------------------*/
-    $('.best-seller-pro-active')
-        .on('changed.owl.carousel initialized.owl.carousel', function (event) {
-            $(event.target)
-                .find('.owl-item').removeClass('last')
-                .eq(event.item.index + event.page.size - 1).addClass('last');
-        }).owlCarousel({
-            loop: false,
-            nav: true,
-            dots: false,
-            smartSpeed: 1200,
-            navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-            margin: 1,
-            responsive: {
-                0: {
-                    items: 1,
-                    autoplay:true
-                },
-                480: {
-                    items: 2
-                },
-                768: {
-                    items: 2
-                },
-                992: {
-                    items: 3
-                },
-                1200: {
-                    items: 4
-                }
-            }
-        })
-
-    /*----------------------------------------------------
-    9. Hand Tool Activation
-    -----------------------------------------------------*/
-    $('.hand-tool-active').owlCarousel({
-            loop: false,
-            nav: true,
-            dots: false,
-            smartSpeed: 1200,
-            navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-            margin: 30,
-            responsive: {
-                0: {
-                    items: 1,
-                    autoplay:true
-                },
-                480: {
-                    items: 2
-                },
-                768: {
-                    items: 3
-                },
-                992: {
-                    items: 3
-                },
-                1200: {
-                    items: 4
-                }
-            }
-    })
-    /*----------------------------------------------------
-    10. Brand Banner Activation
-    -----------------------------------------------------*/
-$('.brand-banner').on('changed.owl.carousel initialized.owl.carousel', function (event) {
-        $(event.target)
-
-                .find('.owl-item').removeClass('last')
-                .eq(event.item.index + event.page.size - 1).addClass('last');
-
-            $(event.target)
-                .find('.owl-item').removeClass('first')
-                .eq(event.item.index).addClass('first')
-
-
-        }).owlCarousel({
-        loop: false,
-        nav: false,
-        dots: false,
-        smartSpeed: 1200,
-        margin: 1,
-        responsive: {
-            0: {
-                items: 1,
-                autoplay:true
-            },
-            480: {
-                items: 3
-            },
-            768: {
-                items: 4
-            },
-            1000: {
-                items: 5
-            }
-        }
-    })
-
-    /*----------------------------------------------------
-    11. Blog Activation
-    -----------------------------------------------------*/
-    $('.blog-active').owlCarousel({
-        loop: false,
-        nav: true,
-        dots: false,
-        smartSpeed: 1000,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        margin: 30,
-        responsive: {
-            0: {
-                items: 1,
-                autoplay:true
-            },
-            768: {
-                items: 2
-            },
-            1000: {
-                items: 3
-            }
-        }
-    })
-    /*----------------------------------------------------
-    12. Blog two Activation
-    -----------------------------------------------------*/
-    $('.blog-active2').owlCarousel({
-        loop: false,
-        nav: true,
-        dots: false,
-        smartSpeed: 1000,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        margin: 30,
-        responsive: {
-            0: {
-                items: 1,
-                autoplay:true
-            },
-            768: {
-                items: 2
-            },
-            1000: {
-                items: 2
-            }
-        }
-    })
-    /*----------------------------
-    13. WOW Js Activation
-    -----------------------------*/
-    new WOW().init();
-
-    /*----------------------------
-    14. ScrollUp Activation
-    -----------------------------*/
-    $.scrollUp({
-        scrollName: 'scrollUp', // Element ID
-        topDistance: '550', // Distance from top before showing element (px)
-        topSpeed: 1000, // Speed back to top (ms)
-        animation: 'fade', // Fade, slide, none
-        scrollSpeed: 900,
-        animationInSpeed: 1000, // Animation in speed (ms)
-        animationOutSpeed: 1000, // Animation out speed (ms)
-        scrollText: '<i class="fa fa-angle-up"></i>', // Text for element
-        activeOverlay: false // Set CSS color to display scrollUp active point, e.g '#00FFFF'
-    });
-
-    /*----------------------------
-    15. Sticky-Menu Activation
+    /*---------------------------
+       Commons Variables
     ------------------------------ */
-    $(window).on('scroll', function () {
-        if ($(this).scrollTop() > 150) {
-            $('.header-sticky').addClass("sticky");
+    var $window = $(window),
+        $body = $("body");
+
+    /*----------------------------------------
+            Background Image             
+    -------------------------------------------*/
+
+    $('[data-bg-image]').each(function() {
+        var $this = $(this),
+            $image = $this.data('bg-image');
+        $this.css('background-image', 'url(' + $image + ')');
+    });
+
+    /*---------------------------
+       Menu Fixed On Scroll Active
+    ------------------------------ */
+    $(window).on("scroll", function(e) {
+        var window_top = $(window).scrollTop() + 1;
+        if (window_top > 250) {
+            $(".sticky-nav").addClass("menu_fixed animated fadeInDown");
         } else {
-            $('.header-sticky').removeClass("sticky");
+            $(".sticky-nav").removeClass("menu_fixed animated fadeInDown");
         }
     });
 
-    /*----------------------------
-    16. Price Slider Activation
-    -----------------------------*/
-    $("#slider-range").slider({
-        range: true,
-        min: 0,
-        max: 80,
-        values: [0, 74],
-        slide: function (event, ui) {
-            $("#amount").val("$" + ui.values[0] + "  $" + ui.values[1]);
-        }
-    });
-    $("#amount").val("$" + $("#slider-range").slider("values", 0) +
-        "  $" + $("#slider-range").slider("values", 1));
+    /*----------------------------------------
+                Bootstrap dropdown               
+        -------------------------------------------*/
 
-    /*--------------------------------
-    17. Testimonial Slick Carousel
+    // Add slideDown animation to Bootstrap dropdown when expanding.
+
+    $('.dropdown').on('show.bs.dropdown', function() {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+    });
+    // Add slideUp animation to Bootstrap dropdown when collapsing.
+    $('.dropdown').on('hide.bs.dropdown', function() {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+    });
+
+    /*---------------------------------
+        Off Canvas Function
     -----------------------------------*/
-    $('.testext_active').owlCarousel({
-        loop: false,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        margin: 15,
-        smartSpeed: 1000,
-        nav: true,
-        dots: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
+    (function() {
+        var $offCanvasToggle = $(".offcanvas-toggle"),
+            $offCanvas = $(".offcanvas"),
+            $offCanvasOverlay = $(".offcanvas-overlay"),
+            $mobileMenuToggle = $(".mobile-menu-toggle");
+        $offCanvasToggle.on("click", function(e) {
+            e.preventDefault();
+            var $this = $(this),
+                $target = $this.attr("href");
+            $body.addClass("offcanvas-open");
+            $($target).addClass("offcanvas-open");
+            $offCanvasOverlay.fadeIn();
+            if ($this.parent().hasClass("mobile-menu-toggle")) {
+                $this.addClass("close");
             }
-        }
-    })
+        });
+        $(".offcanvas-close, .offcanvas-overlay").on("click", function(e) {
+            e.preventDefault();
+            $body.removeClass("offcanvas-open");
+            $offCanvas.removeClass("offcanvas-open");
+            $offCanvasOverlay.fadeOut();
+            $mobileMenuToggle.find("a").removeClass("close");
+        });
+    })();
 
-    /*----------------------------------------------------
-    18. Best Seller Activation
-    -----------------------------------------------------*/
-    $('.best-seller-pro').on('changed.owl.carousel initialized.owl.carousel', function (event) {
-        $(event.target)
-                .find('.owl-item').removeClass('last')
-                .eq(event.item.index + event.page.size - 1).addClass('last');
-        }).owlCarousel({
-        loop: false,
-        nav: true,
-        dots: false,
-        smartSpeed: 1000,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        margin: 0,
-        responsive: {
-            0: {
-                items: 1,
-                autoplay:true
-            },
-            480: {
-                items: 2
-            },
-            768: {
-                items: 2
-            },
-            1000: {
-                items: 1
-            }
-        }
-    })
-    /*----------------------------------------------------
-    19. Best Product Activation
-    -----------------------------------------------------*/
-    $('.best-seller-pro-two')
-        .owlCarousel({
-            loop: false,
-            nav: false,
-            dots: false,
-            smartSpeed: 1200,
-            margin: 0,
-            responsive: {
-                0: {
-                    items: 1,
-                    autoplay:true
-                },
-                768: {
-                    items: 3
-                },
-                1000: {
-                    items: 1
+    /*----------------------------------
+        Off Canvas Menu
+    -----------------------------------*/
+    function mobileOffCanvasMenu() {
+        var $offCanvasNav = $(".offcanvas-menu, .overlay-menu"),
+            $offCanvasNavSubMenu = $offCanvasNav.find(".sub-menu");
+
+        /*Add Toggle Button With Off Canvas Sub Menu*/
+        $offCanvasNavSubMenu.parent().prepend('<span class="menu-expand"></span>');
+
+        /*Category Sub Menu Toggle*/
+        $offCanvasNav.on("click", "li a, .menu-expand", function(e) {
+            var $this = $(this);
+            if ($this.attr("href") === "#" || $this.hasClass("menu-expand")) {
+                e.preventDefault();
+                if ($this.siblings("ul:visible").length) {
+                    $this.parent("li").removeClass("active");
+                    $this.siblings("ul").slideUp();
+                    $this.parent("li").find("li").removeClass("active");
+                    $this.parent("li").find("ul:visible").slideUp();
+                } else {
+                    $this.parent("li").addClass("active");
+                    $this.closest("li").siblings("li").removeClass("active").find("li").removeClass("active");
+                    $this.closest("li").siblings("li").find("ul:visible").slideUp();
+                    $this.siblings("ul").slideDown();
                 }
             }
-        })
-    
-    /*-------------------------------------
-    20. Blog Realted Post activation
-    --------------------------------------*/
-    $('.blog-related-post-active').owlCarousel({
-        loop: false,
-        margin: 30,
-        smartSpeed: 1000,
-        nav: false,
-        dots: false,
-        items: 2,
-        responsive: {
+        });
+    }
+    mobileOffCanvasMenu();
+
+    /*---------------------
+        Hero Slider
+     ---------------------- */
+
+    var heroSlider = new Swiper('.hero-slider.swiper-container', {
+        loop: true,
+        speed: 2000,
+        effect: "fade",
+        autoplay: {
+            delay: 7000,
+            disableOnInteraction: false,
+        },
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
+
+
+
+    /*---------------------
+        Category Slider
+     ---------------------- */
+
+    var categorySlider = new Swiper('.tab-slider.swiper-container', {
+        loop: true,
+        slidesPerView: 6,
+        spaceBetween: 30,
+        speed: 1500,
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
             0: {
-                items: 1,
-                autoplay:true
+                slidesPerView: 2,
             },
-            480: {
-                items: 1
+            478: {
+                slidesPerView: 2,
+            },
+            576: {
+                slidesPerView: 3,
             },
             768: {
-                items: 2
+                slidesPerView: 4,
             },
-            992:{
-                margin: 29,
-                items: 2
+            992: {
+                slidesPerView: 5,
             },
             1200: {
-                items: 2
-            }
-        }
-    })
-    
-    /*----------------------------------------------------
-    21.Best Seller  Unique Activation
-    -----------------------------------------------------*/
-    $('.best-seller-unique').on('changed.owl.carousel initialized.owl.carousel', function (event) {
-        $(event.target)
-                .find('.owl-item').removeClass('last')
-                .eq(event.item.index + event.page.size - 1).addClass('last');
-        }).owlCarousel({
-        loop: false,
-        nav: true,
-        dots: false,
-        smartSpeed: 1000,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        margin: 0,
-        responsive: {
+                slidesPerView: 6,
+            },
+        },
+    });
+
+    /*---------------------------
+        Testimonial Slider 
+    ------------------------------ */
+
+    var testiSlider = new Swiper('.content-top', {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        speed: 1500,
+        loop: true,
+
+        // Navigation arrows
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
             0: {
-                items: 1,
-                autoplay:true
+                slidesPerView: 1,
+            },
+            478: {
+                slidesPerView: 1,
+            },
+            576: {
+                slidesPerView: 1,
             },
             768: {
-                items: 2
+                slidesPerView: 2,
             },
-            1000: {
-                items: 1
+            992: {
+                slidesPerView: 2,
+            },
+            1200: {
+                slidesPerView: 2,
+            },
+        },
+    });
+
+    /*-------------------------------
+        Feature Product Slider
+     -------------------------------- */
+
+    var productSlider = new Swiper('.feature-product-slider.swiper-container', {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        speed: 1500,
+        loop: true,
+
+        // Navigation arrows
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            478: {
+                slidesPerView: 1,
+            },
+            576: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 1,
+            },
+            992: {
+                slidesPerView: 2,
+            },
+            1200: {
+                slidesPerView: 2,
+            },
+        },
+    });
+
+    /*---------------------
+        New Product Slider
+     ---------------------- */
+
+    var productSlider = new Swiper('.new-product-slider.swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        speed: 1500,
+        loop: true,
+
+        // Navigation arrows
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            478: {
+                slidesPerView: 1,
+            },
+            576: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 4,
+            },
+        },
+    });
+
+    /*---------------------------
+        Quick view Slider 
+    ------------------------------ */
+    var galleryThumb = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        centerMood:true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 0,
+        loop: true,
+        slidesPerView: 1,
+        centerMood:true,
+        thumbs: {
+            swiper: galleryThumb
+        }
+    });
+
+    /*---------------------------
+        Product Details Slider 
+    ------------------------------ */
+    var zoomThumb = new Swiper('.zoom-thumbs', {
+        spaceBetween: 18,
+        slidesPerView: 3,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        // Navigation arrows
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+    var zoomTop = new Swiper('.zoom-top', {
+        spaceBetween: 0,
+        slidesPerView: 1,
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true,
+        },
+        thumbs: {
+            swiper: zoomThumb
+        }
+    });
+
+    /*---------------------------
+            Product Details Slider 
+        ------------------------------ */
+    var zoomThumb = new Swiper('.zoom-thumbs-2', {
+        spaceBetween: 20,
+        slidesPerView: 5,
+        direction: 'vertical',
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var zoomTop = new Swiper('.zoom-top-2', {
+        spaceBetween: 0,
+        loop: true,
+        thumbs: {
+            swiper: zoomThumb
+        }
+    });
+
+    /*---------------------------
+        Quick view Slider 
+    ------------------------------ */
+    var galleryThumb = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        // Navigation arrows
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 0,
+        loop: true,
+        thumbs: {
+            swiper: galleryThumb
+        }
+    });
+
+
+
+    /*----------------------------
+        Cart Plus Minus Button
+    ------------------------------ */
+    var CartPlusMinus = $(".cart-plus-minus");
+    CartPlusMinus.prepend('<div class="dec qtybutton">-</div>');
+    CartPlusMinus.append('<div class="inc qtybutton">+</div>');
+    $(".qtybutton").on("click", function() {
+        var $button = $(this);
+        var oldValue = $button.parent().find("input").val();
+        if ($button.text() === "+") {
+            var newVal = parseFloat(oldValue) + 1;
+        } else {
+            // Don't allow decrementing below zero
+            if (oldValue > 1) {
+                var newVal = parseFloat(oldValue) - 1;
+            } else {
+                newVal = 1;
             }
         }
-    })
-     
-    
+        $button.parent().find("input").val(newVal);
+    });
+
+
+    /*------------------------------
+            Single Product Slider
+    -----------------------------------*/
+    var swiper = new Swiper(".single-product-slider", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        speed: 1500,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            478: {
+                slidesPerView: 1,
+            },
+            576: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+            1024: {
+                slidesPerView: 4,
+            },
+            1200: {
+                slidesPerView: 4,
+            },
+        },
+    });
+
+    /*-------------------------------
+        Create an account toggle
+    ---------------------------------*/
+    $(".checkout-toggle2").on("click", function() {
+        $(".open-toggle2").slideToggle(1000);
+    });
+
+    $(".checkout-toggle").on("click", function() {
+        $(".open-toggle").slideToggle(1000);
+    });
+
+
+    /*---------------------
+        Scroll Up
+    --------------------- */
+    $.scrollUp({
+        scrollText: '<i class="pe-7s-angle-up"></i>',
+        easingType: "linear",
+        scrollSpeed: 900,
+        animation: "fade",
+    });
+    /*---------------------
+        Countdown
+    --------------------- */
+    $("[data-countdown]").each(function() {
+        var $this = $(this),
+            finalDate = $(this).data("countdown");
+        $this.countdown(finalDate, function(event) {
+            $this.html(event.strftime('<span class="cdown hour"><span class="cdown-1">%-H</span><p>Hrs</p></span> <span class="cdown minutes"><span class="cdown-1">%M</span> <p>Min</p></span> <span class="cdown second"><span class="cdown-1"> %S</span> <p>Sec</p></span>'));
+        });
+    });
+
+    /*-----------------------------
+        Blog Gallery Slider 
+    -------------------------------- */
+    var swiper = new Swiper(".blog-post-media.swiper-container", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+    /*---------------------------
+            Brand Logo
+      ------------------------------ */
+    var companyLogoSlider = new Swiper('.brand-slider.swiper-container', {
+        slidesPerView: 4,
+        speed: 1500,
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+
+            0: {
+                slidesPerView: 1,
+            },
+            480: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 4,
+            },
+        }
+    });
+
+    /*---------------------
+        venobox
+    --------------------- */
+    $('.venobox').venobox();
+
+
 })(jQuery);

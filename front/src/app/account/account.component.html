@@ -1,203 +1,175 @@
-<!-- Breadcrumb Start -->
-<div class="breadcrumb-area ptb-60 ptb-sm-30">
+<!-- breadcrumb-area start -->
+<div class="breadcrumb-area">
   <div class="container">
-    <div class="breadcrumb">
-      <ul>
-        <li><a routerLink="">Home</a></li>
-        <li class="active"><a routerLink="account">Account</a></li>
-      </ul>
+    <div class="row align-items-center justify-content-center">
+      <div class="col-12 text-center">
+        <h2 class="breadcrumb-title">Account</h2>
+        <!-- breadcrumb-list start -->
+        <ul class="breadcrumb-list">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Account</li>
+        </ul>
+        <!-- breadcrumb-list end -->
+      </div>
     </div>
   </div>
-  <!-- Container End -->
 </div>
-<!-- Breadcrumb End -->
-<!-- My Account Page Start Here -->
-<div class="my-account white-bg pb-60">
+<!-- breadcrumb-area end -->
+<!-- account area start -->
+<div class="account-dashboard pt-100px pb-100px">
   <div class="container">
-    <div class="account-dashboard">
-      <div class="dashboard-upper-info">
-        <div class="row no-gutters align-items-center">
-          <div class="col-lg-3 col-md-6">
-            <div class="d-single-info">
-              <p class="user-name">Hello <span>yourmail@info</span></p>
-              <p>(not yourmail@info? <a href="#">Log Out</a>)</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="d-single-info">
-              <p>Need Assistance? Customer service at.</p>
-              <p>admin@example.com.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="d-single-info">
-              <p>E-mail them at </p>
-              <p>support@example.com</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="d-single-info text-center">
-              <a class="view-cart" routerLink="cart"><i class="fa fa-cart-plus" aria-hidden="true"></i>view cart</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-2">
-          <!-- Nav tabs -->
-          <ul class="nav flex-column dashboard-list" role="tablist">
-            <li><a data-toggle="tab" href="#account-details">Account details</a></li>
-            <li><a data-toggle="tab" href="#orders">Orders</a></li>
-            <li><a data-toggle="tab" href="#address">Addresses</a></li>
-            <li><a routerLink="login" href="#logout">logout</a></li>
+    <div class="row">
+      <div class="col-sm-12 col-md-3 col-lg-3">
+        <!-- Nav tabs -->
+        <div class="dashboard_tab_button" data-aos="fade-up" data-aos-delay="0">
+          <ul role="tablist" class="nav flex-column dashboard-list">
+            <li><a href="#dashboard" data-bs-toggle="tab" class="nav-link active">Dashboard</a></li>
+            <li> <a href="#orders" data-bs-toggle="tab" class="nav-link">Orders</a></li>
+            <li><a href="#downloads" data-bs-toggle="tab" class="nav-link">Downloads</a></li>
+            <li><a href="#address" data-bs-toggle="tab" class="nav-link">Addresses</a></li>
+            <li><a href="#account-details" data-bs-toggle="tab" class="nav-link">Account details</a>
+            </li>
+            <li><a href="login.html" class="nav-link">logout</a></li>
           </ul>
         </div>
-        <div class="col-lg-10">
-          <!-- Tab panes -->
-          <div class="tab-content dashboard-content mt-all-40">
-            <div id="dashboard" class="tab-pane active">
-              <h3>Dashboard </h3>
-              <p>From your account dashboard. you can easily check & view your <a href="#">recent orders</a>, manage your <a href="#">shipping and billing addresses</a> and <a href="#">edit your password and account details.</a></p>
+      </div>
+      <div class="col-sm-12 col-md-9 col-lg-9">
+        <!-- Tab panes -->
+        <div class="tab-content dashboard_content" data-aos="fade-up" data-aos-delay="200">
+          <div class="tab-pane fade show active" id="dashboard">
+            <h4>Dashboard </h4>
+            <p>From your account dashboard. you can easily check &amp; view your <a href="#">recent
+              orders</a>, manage your <a href="#">shipping and billing addresses</a> and <a href="#">Edit your password and account details.</a></p>
+          </div>
+          <div class="tab-pane fade" id="orders">
+            <h4>Orders</h4>
+            <div class="table_page table-responsive">
+              <table>
+                <thead>
+                <tr>
+                  <th>Order</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th>Total</th>
+                  <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>May 10, 2018</td>
+                  <td><span class="success">Completed</span></td>
+                  <td>$25.00 for 1 item </td>
+                  <td><a href="cart.html" class="view">view</a></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>May 10, 2018</td>
+                  <td>Processing</td>
+                  <td>$17.00 for 1 item </td>
+                  <td><a href="cart.html" class="view">view</a></td>
+                </tr>
+                </tbody>
+              </table>
             </div>
-            <div id="orders" class="tab-pane fade">
-              <h3>Orders</h3>
-              <div class="table-responsive">
-                <table class="table">
-                  <thead>
-                  <tr>
-                    <th>Order</th>
-                    <th>Date</th>
-                    <th>Status</th>
-                    <th>Total</th>
-                    <th>Actions</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>May 10, 2018</td>
-                    <td>Processing</td>
-                    <td>$25.00 for 1 item </td>
-                    <td><a class="view" routerLink="cart">view</a></td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>May 10, 2018</td>
-                    <td>Processing</td>
-                    <td>$17.00 for 1 item </td>
-                    <td><a class="view" routerLink="cart">view</a></td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
+          </div>
+          <div class="tab-pane fade" id="downloads">
+            <h4>Downloads</h4>
+            <div class="table_page table-responsive">
+              <table>
+                <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Downloads</th>
+                  <th>Expires</th>
+                  <th>Download</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Shopnovilla - Free Real Estate PSD Template</td>
+                  <td>May 10, 2018</td>
+                  <td><span class="danger">Expired</span></td>
+                  <td><a href="#" class="view">Click Here To Download Your File</a></td>
+                </tr>
+                <tr>
+                  <td>Organic - ecommerce html template</td>
+                  <td>Sep 11, 2018</td>
+                  <td>Never</td>
+                  <td><a href="#" class="view">Click Here To Download Your File</a></td>
+                </tr>
+                </tbody>
+              </table>
             </div>
-            <div id="downloads" class="tab-pane fade">
-              <h3>Downloads</h3>
-              <div class="table-responsive">
-                <table class="table">
-                  <thead>
-                  <tr>
-                    <th>Product</th>
-                    <th>Downloads</th>
-                    <th>Expires</th>
-                    <th>Download</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>Proecut Name Here</td>
-                    <td>May 10, 2018</td>
-                    <td>never</td>
-                    <td><a class="view" href="#">Click Here To Download Your File</a></td>
-                  </tr>
-                  <tr>
-                    <td>Proecut Name Here</td>
-                    <td>Sep 11, 2018</td>
-                    <td>never</td>
-                    <td><a class="view" href="#">Click Here To Download Your File</a></td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div id="address" class="tab-pane">
-              <p>The following addresses will be used on the checkout page by default.</p>
-              <h4 class="billing-address">Billing address</h4>
-              <a class="view" href="#">edit</a>
-              <p>steven smith</p>
-              <p>Australia</p>
-            </div>
-            <div id="account-details" class="tab-pane fade">
-              <h3>Account details </h3>
-              <div class="register-form login-form clearfix">
-                <form action="#">
-                  <div class="form-group row align-items-center">
-                    <label class="col-lg-3 col-md-4 col-form-label">Social title</label>
-                    <div class="col-lg-6 col-md-8">
-                      <span class="custom-radio"><input name="id_gender" value="1" type="radio"> Mr.</span>
-                      <span class="custom-radio"><input name="id_gender" value="1" type="radio"> Mrs.</span>
+          </div>
+          <div class="tab-pane" id="address">
+            <p>The following addresses will be used on the checkout page by default.</p>
+            <h5 class="billing-address">Billing address</h5>
+            <a href="#" class="view">Edit</a>
+            <p class="mb-2"><strong>Michael M Hoskins</strong></p>
+            <address>
+              <span class="mb-1 d-inline-block"><strong>City:</strong> Seattle</span>,
+              <br>
+              <span class="mb-1 d-inline-block"><strong>State:</strong> Washington(WA)</span>,
+              <br>
+              <span class="mb-1 d-inline-block"><strong>ZIP:</strong> 98101</span>,
+              <br>
+              <span><strong>Country:</strong> USA</span>
+            </address>
+          </div>
+          <div class="tab-pane fade" id="account-details">
+            <h3>Account details </h3>
+            <div class="login">
+              <div class="login_form_container">
+                <div class="account_login_form">
+                  <form action="#">
+                    <p>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#loginActive">Log in instead!</a></p>
+                    <div class="input-radio">
+                                                    <span class="custom-radio"><input type="radio" value="1"
+                                                                                      name="id_gender"> Mr.</span>
+                      <span class="custom-radio"><input type="radio" value="1"
+                                                        name="id_gender"> Mrs.</span>
+                    </div> <br>
+                    <div class="default-form-box mb-20">
+                      <label>First Name</label>
+                      <input type="text" name="first-name">
                     </div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="f-name" class="col-lg-3 col-md-4 col-form-label">First Name</label>
-                    <div class="col-lg-6 col-md-8">
-                      <input type="text" class="form-control" id="f-name">
+                    <div class="default-form-box mb-20">
+                      <label>Last Name</label>
+                      <input type="text" name="last-name">
                     </div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="l-name" class="col-lg-3 col-md-4 col-form-label">Last Name</label>
-                    <div class="col-lg-6 col-md-8">
-                      <input type="text" class="form-control" id="l-name">
+                    <div class="default-form-box mb-20">
+                      <label>Email</label>
+                      <input type="text" name="email-name">
                     </div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="email" class="col-lg-3 col-md-4 col-form-label">Email address</label>
-                    <div class="col-lg-6 col-md-8">
-                      <input type="text" class="form-control" id="email">
+                    <div class="default-form-box mb-20">
+                      <label>Password</label>
+                      <input type="password" name="user-password">
                     </div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="inputpassword" class="col-lg-3 col-md-4 col-form-label">Current password</label>
-                    <div class="col-lg-6 col-md-8">
-                      <input type="password" class="form-control" id="inputpassword">
+                    <div class="default-form-box mb-20">
+                      <label>Birthdate</label>
+                      <input type="date" name="birthday">
                     </div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="newpassword" class="col-lg-3 col-md-4 col-form-label">New password</label>
-                    <div class="col-lg-6 col-md-8">
-                      <input type="password" class="form-control" id="newpassword">
-                      <button class="btn show-btn" type="button">Show</button>
+                    <span class="example">
+                      (E.g.: 05/31/1970)
+                    </span>
+                    <br>
+                    <label class="checkbox-default" for="offer">
+                      <input type="checkbox" id="offer">
+                      <span>Receive offers from our partners</span>
+                    </label>
+                    <br>
+                    <label class="checkbox-default checkbox-default-more-text" for="newsletter">
+                      <input type="checkbox" id="newsletter">
+                      <span>Sign up for our newsletter<br><em>You may unsubscribe at any
+                                                        moment. For that purpose, please find our contact info in the
+                                                        legal notice.</em></span>
+                    </label>
+                    <div class="save_button mt-3">
+                      <button class="btn" type="submit">Save</button>
                     </div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="c-password" class="col-lg-3 col-md-4 col-form-label">Confirm password</label>
-                    <div class="col-lg-6 col-md-8">
-                      <input type="password" class="form-control" id="c-password">
-                      <button class="btn show-btn" type="button">Show</button>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="birth" class="col-lg-3 col-md-4 col-form-label">Birthdate</label>
-                    <div class="col-lg-6 col-md-8">
-                      <input type="text" class="form-control" id="birth" placeholder="MM/DD/YYYY">
-                    </div>
-                  </div>
-                  <div class="form-check row p-0 mt-20">
-                    <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-4">
-                      <input class="form-check-input" value="#" id="offer" type="checkbox">
-                      <label class="form-check-label" for="offer">Receive offers from our partners</label>
-                    </div>
-                  </div>
-                  <div class="form-check row p-0 mt-20">
-                    <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-4">
-                      <input class="form-check-input" value="#" id="subscribe" type="checkbox">
-                      <label class="form-check-label" for="subscribe">Sign up for our newsletter<br>Subscribe to our newsletters now and stay up-to-date with new collections, the latest lookbooks and exclusive offers..</label>
-                    </div>
-                  </div>
-                  <div class="register-box mt-40">
-                    <button type="submit" class="return-customer-btn f-right">Save</button>
-                  </div>
-                </form>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -206,4 +178,4 @@
     </div>
   </div>
 </div>
-<!-- My Account Page End Here -->
+<!-- account area start -->

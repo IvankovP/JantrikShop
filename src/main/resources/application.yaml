@@ -6,7 +6,7 @@ spring:
     show-sql: true
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/jantrikShop
+    url: jdbc:postgresql://localhost:5432/shop
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver

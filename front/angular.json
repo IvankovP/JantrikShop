@@ -29,20 +29,16 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/js/vendor/modernizr-2.8.3.min.js",
-              "src/assets/js/vendor/jquery-1.12.4.min.js",
-              "src/assets/js/jquery.meanmenu.min.js",
-              "src/assets/js/jquery.scrollUp.js",
-              "src/assets/js/owl.carousel.min.js",
-              "src/assets/js/slick.min.js",
-              "src/assets/js/wow.min.js",
-              "node_modules/nouislider/dist/nouislider.min.js",
-              "src/assets/js/jquery.countdown.min.js",
-              "src/assets/js/jquery.nivo.slider.js",
-              "src/assets/js/jquery.fancybox.min.js",
-              "src/assets/js/bootstrap.min.js",
-              "src/assets/js/popper.js",
-              "src/assets/js/plugins.js"
+              "src/assets/js/vendor/bootstrap.bundle.min.js",
+              "src/assets/js/vendor/jquery-3.6.0.min.js",
+              "src/assets/js/vendor/jquery-migrate-3.3.2.min.js",
+              "src/assets/js/vendor//modernizr-3.11.2.min.js",
+              "src/assets/js/plugins/jquery.countdown.min.js",
+              "src/assets/js/plugins/swiper-bundle.min.js",
+              "src/assets/js/plugins/scrollUp.js",
+              "src/assets/js/plugins/venobox.min.js",
+              "src/assets/js/plugins/jquery-ui.min.js",
+              "src/assets/js/plugins/mailchimp-ajax.js"
             ]
           },
           "configurations": {
