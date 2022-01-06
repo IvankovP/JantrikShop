@@ -3,22 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { ContactsComponent } from './contacts/contacts.component';
-import { ErrorComponent } from './error/error.component';
-import { BlogComponent } from './blog/blog.component';
-import { BlogDetailsComponent } from './blog-details/blog-details.component';
-import { ShopComponent } from './shop/shop.component';
-import { ProductComponent } from './product/product.component';
-import { CompareComponent } from './compare/compare.component';
-import { CartComponent } from './cart/cart.component';
-import { CheckoutComponent } from './checkout/checkout.component';
-import { WishlistComponent } from './wishlist/wishlist.component';
-import { AccountComponent } from './account/account.component';
-import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactsComponent } from './pages/contacts/contacts.component';
+import { ErrorComponent } from './pages/error/error.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { BlogDetailsComponent } from './pages/blog-details/blog-details.component';
+import { ShopComponent } from './pages/shop/shop.component';
+import { ProductComponent } from './pages/product/product.component';
+import { CompareComponent } from './pages/compare/compare.component';
+import { CartComponent } from './pages/cart/cart.component';
+import { CheckoutComponent } from './pages/checkout/checkout.component';
+import { WishlistComponent } from './pages/wishlist/wishlist.component';
+import { AccountComponent } from './pages/account/account.component';
+import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { CartEmptyComponent } from './pages/cart-empty/cart-empty.component';
+import { FaqComponent } from './pages/faq/faq.component';
+import { ThankYouComponent } from './pages/thank-you/thank-you.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,10 @@ import { RegisterComponent } from './register/register.component';
     AccountComponent,
     ForgotPasswordComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    CartEmptyComponent,
+    FaqComponent,
+    ThankYouComponent
   ],
   imports: [
     BrowserModule,
