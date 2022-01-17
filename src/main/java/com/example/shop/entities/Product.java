@@ -51,7 +51,6 @@ public class Product extends DeletableEntity {
     @JoinTable(name = "product_category", joinColumns = @JoinColumn(name = "product_id"), inverseJoinColumns = @JoinColumn(name = "category_id"))
     private Set<Category> categories;
 
-    @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(name = "rating", joinColumns = @JoinColumn(name = "product_id"), inverseJoinColumns = @JoinColumn(name = "user_id"))
-    private Set<Product> rating;
+    @OneToMany(mappedBy = "product")
+    private Set<ProductRating> ratings;
 }
