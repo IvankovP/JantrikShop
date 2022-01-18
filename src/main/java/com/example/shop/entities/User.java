@@ -32,4 +32,7 @@ public class User extends DeletableEntity {
 
     @OneToMany(mappedBy = "user")
     private Set<Order> orders;
+
+    @OneToMany(mappedBy = "user")
+    private Set<ProductRating> ratings;
 }
