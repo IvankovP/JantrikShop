@@ -24,7 +24,7 @@ public class ProductRating {
     private User user;
 
     @Column(name = "value")
-    private String value;
+    private int value;
 
     @Embeddable
     @Getter
