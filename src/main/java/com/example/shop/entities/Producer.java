@@ -12,7 +12,7 @@ import java.util.Set;
 @Data
 @Entity
 @Table(name = "producers")
-public class Producer {
+public class Producer extends DeletableEntity {
     @Id
     @GeneratedValue(generator = "producers_seq", strategy = GenerationType.SEQUENCE)
     @SequenceGenerator(name = "producers_seq", sequenceName = "producers_id_seq", allocationSize = 1)

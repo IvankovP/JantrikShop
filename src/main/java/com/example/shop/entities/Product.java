@@ -43,10 +43,6 @@ public class Product extends DeletableEntity {
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "product")
     private Set<AttributeValue> attributeValues;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "producer_id")
-    private Producer producer;
-
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "product_category", joinColumns = @JoinColumn(name = "product_id"), inverseJoinColumns = @JoinColumn(name = "category_id"))
     private Set<Category> categories;

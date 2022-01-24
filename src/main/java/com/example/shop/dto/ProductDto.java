@@ -33,13 +33,17 @@ public class ProductDto {
         this.discountPercentage = product.getDiscountPercentage();
         this.newArrival = product.isNewArrival();
         this.images = product.getImages();
+
         this.mainImage = product.getImages() == null ? null : product.getImages().stream()
                 .filter(Image::isMain)
                 .findFirst()
                 .orElse(null);
+
         this.countRatingVotes = product.getRatings() == null ? 0 : product.getRatings().size();
-        this.rating = this.countRatingVotes == 0 ? 0 : product.getRatings().stream()
+
+        this.rating = this.countRatingVotes == 0 ? 0 : (int) Math.round(product.getRatings().stream()
                 .mapToInt(ProductRating::getValue)
-                .sum();
+                .average()
+                .orElse(0));
     }
 }
