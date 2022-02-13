@@ -17,6 +17,6 @@ public class Producer extends DeletableEntity {
     @Column(name = "name")
     private String name;
 
-    @OneToMany(mappedBy = "producer")
-    private Set<Product> products;
+    /*@OneToMany(mappedBy = "producer")
+    private Set<Product> products;*/
 }
