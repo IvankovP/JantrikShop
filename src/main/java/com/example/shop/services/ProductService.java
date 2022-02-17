@@ -14,13 +14,13 @@ import java.util.stream.Collectors;
 public class ProductService {
     private final ProductRepository productRepository;
 
-    public Set<ProductDto> findAll() {
+    public Set<ProductDto> findAllToDto() {
         return productRepository.findAll().stream()
                 .map(ProductDto::new)
                 .collect(Collectors.toSet());
     }
 
-    public ProductDto findById(Long id) {
+    public ProductDto findByIdToDto(Long id) {
         return productRepository.findById(id)
                 .map(ProductDto::new)
                 .orElseThrow(() -> new ResourceNotFoundException("Product with id - "

@@ -1,13 +1,13 @@
 package com.example.shop.controllers;
 
 import com.example.shop.dto.ProductDto;
-import com.example.shop.repositories.ProductRepository;
+import com.example.shop.services.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
@@ -15,10 +15,10 @@ import java.util.stream.Collectors;
 @RequestMapping("/product")
 public class ProductController {
 
-    private final ProductRepository productRepository;
+    private final ProductService productService;
 
     @GetMapping
-    public List<ProductDto> getAllProducts() {
-        return productRepository.findAll().stream().map(ProductDto::new).collect(Collectors.toList());
+    public Set<ProductDto> getAllProducts() {
+        return productService.findAllToDto();
     }
 }
